@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python</title>
+
+    <style>
+        .button {
+            padding: 5px 10px;
+            margin-right: 10px;
+            background-color: forestgreen;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python is a computer programming 
+        language used to build websites and software!</h1>
+
+    <nav>
+        <button class="button" onclick="navigateTo('./index.html')">Home</button>
+    </nav>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>

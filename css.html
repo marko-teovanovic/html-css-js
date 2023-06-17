@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS</title>
+
+        <style>
+            .button {
+                padding: 5px 10px;
+                margin-right: 10px;
+                background-color: forestgreen;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+            body {
+                transition: background-color 0.5s ease;
+            }
+            body {
+                transition: font-family 0.5s ease;
+            }
+        </style>
+    </head>
+<body>
+    <h1>We use CSS to create nice lookgin web sites!</h1>
+
+    <nav>
+        <button class="button" onclick="navigateTo('./index.html')">Home</button>
+    </nav>
+    <h1>Try it by yourself!</h1>
+
+    <button class="color-button" onclick="changeBackgroundColor('#00BFBC')">Color 1</button>
+    <button class="color-button" onclick="changeBackgroundColor('#89D600')">Color 2</button>
+    <button class="color-button" onclick="changeBackgroundColor('#F67E1C')">Color 3</button>
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+        function changeFontFamily(fontFamily) {
+            document.body.style.fontFamily = fontFamily;
+        }
+    </script>
+    <h1>
+        <button class="font-button" onclick="changeFontFamily('Arial, sans-sans-serif')">Font 1</button>
+        <button class="font-button" onclick="changeFontFamily('Geneva, sans-sans-serif')">Font 2</button>
+        <button class="font-button" onclick="changeFontFamily('Verdana, sans-sans-serif')">Font 3</button>    
+    </h1>
+</body>
+
+</html>

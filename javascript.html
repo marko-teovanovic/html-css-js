@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+
+        <style>
+            .button {
+                padding: 5px 10px;
+                margin-right: 10px;
+                background-color: forestgreen;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+<body>
+    <h1>We use JavaScript to implement complex 
+        features on web pages!</h1>
+    
+    <nav>
+        <button class="button" onclick="navigateTo('./index.html')">Home</button>
+    </nav>
+    <h1>Examples:</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="window.print()">Print this page</button>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+        function showAlert() {
+            alert("Hello!");
+        }
+        
+    </script>
+</body>
+
+</html>
