@@ -4,23 +4,34 @@
     <title>Coding-languages</title>
 
     <style>
-        .button {
-            padding: 5px 10px;
-            margin-right: 10px;
-            background-color: forestgreen;
-            color: white;
-            border-radius: 10px;
+        .button-container {
+            
+            outline: none;
             cursor: pointer;
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            border-radius: 8px;
+            padding: 13px 23px;
+            border: 1px solid #222222;
+            background: #fff;
+            color: #222222;
+            display: flex;
+            flex-direction: column;
+            }
+                
+        body {
+          background-image: url('top10lan.jpg');
         }
-    </style>
+        </style>
 </head>
 <body>
-    <h1>Coding Languages</h1>
+    <h1 style="font-family:verdana;color:rgb(255, 255, 255);font-size: 300%;">Coding Languages</h1>
 
     <nav>
-        <button class="button" onclick="navigateTo('./python.html')">Python</button>
-        <button class="button" onclick="navigateTo('./css.html')">CSS</button>
-        <button class="button" onclick="navigateTo('./javascript.html')">JavaScript</button>
+        <button class="button-container" onclick="navigateTo('./python.html')">Python</button>
+        <button class="button-container" onclick="navigateTo('./css.html')">CSS</button>
+        <button class="button-container" onclick="navigateTo('./javascript.html')">JavaScript</button>
     </nav>
 
     <script>
