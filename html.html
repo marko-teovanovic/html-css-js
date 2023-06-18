@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML</title>
+
+    <style>
+        .button {
+            padding: 5px 10px;
+            margin-right: 10px;
+            background-color: forestgreen;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        body {
+            background-image: url(./res/what-is-html-3.webp);
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-family:verdana;
+    color:rgb(255, 255, 255);
+    font-size: 300%;"> HTML is the standard markup language for Web pages. 
+    With HTML you can create your own Website. </h1>
+
+    <nav>
+        <a href="#" class="image-button">
+            <img src="./res/png-transparent-graphy-home-web-design-button-blue-web-button-symbol-thumbnail-removebg-preview.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./index.html')">
+    </nav>
+
+    <script>
+        function navigateTo(url) {
+            window.location.href = url;
+        }
+    </script>
