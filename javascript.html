@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>JavaScript</title>
+<head>
+    <title>JavaScript</title>
 
-        <style>
-            .button {
-                padding: 5px 10px;
-                margin-right: 10px;
-                background-color: forestgreen;
-                color: white;
-                border-radius: 10px;
-                cursor: pointer;
-            }
-        </style>
-    </head>
+    <style>
+        .button {
+            padding: 5px 10px;
+            margin: 10px;
+            background-color: forestgreen;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        body {
+            background-image: url(./res/1_YQgaKfVzK-YpxyT3NYqJAg.png);
+            background-size: cover;
+        }
+    </style>
+</head>
 <body>
-    <h1>We use JavaScript to implement complex 
+
+    <h1 style="font-family:verdana;
+    color:rgb(255, 255, 255);
+    font-size: 300%;">We use JavaScript to implement complex 
         features on web pages!</h1>
     
-    <nav>
-        <button class="button" onclick="navigateTo('./index.html')">Home</button>
-    </nav>
-    <h1>Examples:</h1>
+    <h1 style="font-family:verdana;
+    color:rgb(0, 0, 0);
+    font-size: 300%;">Examples:</h1>
     <button onclick="showAlert()">Show Alert</button>
     <button onclick="window.print()">Print this page</button>
+
+    <nav>
+        <a href="#" class="image-button">
+            <img src="./res/png-transparent-graphy-home-web-design-button-blue-web-button-symbol-thumbnail-removebg-preview.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./index.html')">
+    </nav>
 
     <script>
         function navigateTo(url) {
             window.location.href = url;
         }
         function showAlert() {
-            alert("Hello!");
+            alert("Hello, this is done by JS!");
         }
         
     </script>

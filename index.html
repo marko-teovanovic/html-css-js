@@ -4,34 +4,47 @@
     <title>Coding-languages</title>
 
     <style>
-        .button-container {
-            
-            outline: none;
+        .image-button {
+            display: block;
+            padding: 10px 0;
+            border: none;
+            background: none;
             cursor: pointer;
-            font-size: 16px;
-            line-height: 20px;
-            font-weight: 600;
-            border-radius: 8px;
-            padding: 13px 23px;
-            border: 1px solid #222222;
-            background: #fff;
-            color: #222222;
-            display: flex;
-            flex-direction: column;
-            }
-                
+        }
         body {
-          background-image: url('top10lan.jpg');
+          background-image: url('./res/top10lan.jpg');
+          background-size: cover;
         }
         </style>
 </head>
 <body>
-    <h1 style="font-family:verdana;color:rgb(255, 255, 255);font-size: 300%;">Coding Languages</h1>
+    <h1 style="font-family:verdana;
+    color:rgb(255, 255, 255);
+    font-size: 300%;">Coding Languages</h1>
 
     <nav>
-        <button class="button-container" onclick="navigateTo('./python.html')">Python</button>
-        <button class="button-container" onclick="navigateTo('./css.html')">CSS</button>
-        <button class="button-container" onclick="navigateTo('./javascript.html')">JavaScript</button>
+        <a href="#" class="image-button">
+            <img src="./res/Python.svg.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./python.html')">
+        </a>
+        <a href="#" class="./res/image-button">
+            <img src="./res/css.avif" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./css.html')">
+        </a>
+        <a href="#" class="image-button">
+            <img src="./res/JavaScript-logo.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./javascript.html')">
+        </a>
+        <a href="#" class="image-button">
+            <img src="./res/HTML5_logo_and_wordmark.svg.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./html.html')">
+        </a>
+        
+        
     </nav>
 
     <script>

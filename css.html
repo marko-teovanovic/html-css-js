@@ -13,9 +13,9 @@
                 cursor: pointer;
             }
             body {
+                background-image: url(./res/css-css3-wallpaper-preview.jpg);
+                background-size: cover;
                 transition: background-color 0.5s ease;
-            }
-            body {
                 transition: font-family 0.5s ease;
             }
         </style>
@@ -23,14 +23,12 @@
 <body>
     <h1>We use CSS to create nice lookgin web sites!</h1>
 
-    <nav>
-        <button class="button" onclick="navigateTo('./index.html')">Home</button>
-    </nav>
     <h1>Try it by yourself!</h1>
 
-    <button class="color-button" onclick="changeBackgroundColor('#00BFBC')">Color 1</button>
+    <button class="color-button" onclick="changeBackgroundColor('')">Color 1</button>
     <button class="color-button" onclick="changeBackgroundColor('#89D600')">Color 2</button>
     <button class="color-button" onclick="changeBackgroundColor('#F67E1C')">Color 3</button>
+
     <script>
         function navigateTo(url) {
             window.location.href = url;
@@ -47,6 +45,14 @@
         <button class="font-button" onclick="changeFontFamily('Geneva, sans-sans-serif')">Font 2</button>
         <button class="font-button" onclick="changeFontFamily('Verdana, sans-sans-serif')">Font 3</button>    
     </h1>
+
+    <nav>
+        <a href="#" class="image-button">
+            <img src="./res/png-transparent-graphy-home-web-design-button-blue-web-button-symbol-thumbnail-removebg-preview.png" alt="Button Image"
+            style="width: 70px; height: 70px;" 
+            onclick="navigateTo('./index.html')">
+    </nav>
+    
 </body>
 
 </html>
