@@ -28,8 +28,7 @@
     <h1 style="font-family:verdana;
     color:rgb(0, 0, 0);
     font-size: 300%;">Examples:</h1>
-    <button onclick="showAlert()">Show Alert</button>
-    <button onclick="window.print()">Print this page</button>
+    <button onclick="navigateTo('./pagination/index.html')">Pagination</button>
 
     <nav>
         <a href="#" class="image-button">
@@ -38,12 +37,11 @@
             onclick="navigateTo('./index.html')">
     </nav>
 
+
+
     <script>
         function navigateTo(url) {
             window.location.href = url;
-        }
-        function showAlert() {
-            alert("Hello, this is done by JS!");
         }
         
     </script>
